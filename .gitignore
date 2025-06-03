@@ -1,0 +1,38 @@
+# Node modules
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.*.local
+
+# Build output
+dist/
+build/
+out/
+
+# Coverage reports
+coverage/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# IDE/editor directories
+.idea/
+.vscode/
+*.code-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.local
+*.cache
