@@ -41,7 +41,7 @@ class CheckEligibilityView(APIView):
             tenure = data["tenure"]
 
             try:
-                customer = Customer.objects.get(id=customer_id)
+                customer = Customer.objects.get(customer_ID=customer_id)
             except Customer.DoesNotExist:
                 return Response({"error": "Customer not found"}, status=status.HTTP_404_NOT_FOUND)
 
@@ -111,7 +111,7 @@ class CreateLoanView(APIView):
             tenure = data["tenure"]
 
             try:
-                customer = Customer.objects.get(id=customer_id)
+                customer = Customer.objects.get(customer_ID=customer_id)
             except Customer.DoesNotExist:
                 return Response({"error": "Customer not found"}, status=status.HTTP_404_NOT_FOUND)
 
